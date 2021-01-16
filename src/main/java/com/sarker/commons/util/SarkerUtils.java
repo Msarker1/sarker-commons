@@ -9,14 +9,14 @@ public class SarkerUtils {
 
 	/**
 	 * This method checks if given string is empty, null, or contains whitespace.
-	 * @param s
+	 * @param value
 	 * @return boolean of if any of the condition is true.
 	 */
-	public static boolean isEmpty(String s) {
-		if((s == null) || (s.length() == 0))
+	public static boolean isEmpty(String value) {
+		if((value == null) || (value.length() == 0))
 			return true;
-		for(char c : s.toCharArray()) {
-			if(!Character.isWhitespace(c)) {
+		for(char charValue : value.toCharArray()) {
+			if(!Character.isWhitespace(charValue)) {
 				return false;
 			}
 		}
