@@ -16,8 +16,8 @@ public class SarkerUtils {
 		if((s == null) || (s.length() == 0))
 			return true;
 		for(char c : s.toCharArray()) {
-			if(Character.isWhitespace(c)) {
-				return true;
+			if(!Character.isWhitespace(c)) {
+				return false;
 			}
 		}
 		return false;
