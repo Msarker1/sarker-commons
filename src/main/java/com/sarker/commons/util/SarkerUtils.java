@@ -20,6 +20,6 @@ public class SarkerUtils {
 				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 }
