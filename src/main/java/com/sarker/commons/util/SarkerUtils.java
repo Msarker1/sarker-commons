@@ -1,5 +1,7 @@
 package com.sarker.commons.util;
 
+import com.sarker.commons.constant.CommonsConstants;
+
 /**
  * Util class for utility operations.
  * @author tanvir
@@ -21,5 +23,14 @@ public class SarkerUtils {
 			}
 		}
 		return true;
+	}
+	
+	/**
+	 * This method validates IPv4 addresses.
+	 * @param s
+	 * @return boolean value of given ip string.
+	 */
+	public static boolean isValidIPV4(String s) {
+		return s.matches(CommonsConstants.IPV4regex);
 	}
 }

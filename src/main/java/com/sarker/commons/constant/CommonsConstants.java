@@ -12,5 +12,9 @@ public class CommonsConstants {
 	public static final String GCM = "AES/GCM/NoPadding";
 	public static final String AES = "AES";
 	public static final String HMAC256 = "HmacSHA256";
+	public static final String IPV4regex = "((\\d)|([1-9][\\d])|([2][0-5][0-5])|([1][\\d][\\d]))\\."
+			+ "((\\d)|([1-9][\\d])|([2][0-5][0-5])|([1][\\d][\\d]))\\."
+			+ "((\\d)|([1-9][\\d])|([2][0-5][0-5])|([1][\\d][\\d]))\\."
+			+ "((\\d)|([1-9][\\d])|([2][0-5][0-5])|([1][\\d][\\d]))";
 
 }
