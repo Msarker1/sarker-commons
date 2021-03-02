@@ -27,10 +27,28 @@ public class SarkerUtils {
 	
 	/**
 	 * This method validates IPv4 addresses.
-	 * @param s
+	 * @param ip
 	 * @return boolean value of given ip string.
 	 */
-	public static boolean isValidIPV4(String s) {
-		return s.matches(CommonsConstants.IPV4regex);
+	public static boolean isValidIPV4(String ip) {
+		return ip.matches(CommonsConstants.IPV4REGEX);
+	}
+	
+	/**
+	 * This method validates IPv6 addresses.
+	 * @param ip
+	 * @return boolean value of given ip string.
+	 */
+	public static boolean isValidIPV6(String ip) {
+		return ip.matches(CommonsConstants.IPV6REGEX);
+	}
+	
+	/**
+	 * This method validates if string is valid ip of ipv4 or ipv6
+	 * @param ip
+	 * @return
+	 */
+	public static boolean isValidIp(String ip) {
+		return isValidIPV6(ip) || isValidIPV4(ip);
 	}
 }
