@@ -24,5 +24,5 @@ public class CommonsConstants {
 			"((\\d)|([\\d][\\d])|([01][\\d][\\d])|([2][0-4][\\d])|([2][0-5][0-5]))\\."+
 			"((\\d)|([\\d][\\d])|([01][\\d][\\d])|([2][0-4][\\d])|([2][0-5][0-5]))$";
 	
-	public static final String IPV6REGEX = "^(([0-9a-zA-Z]{1,4}\\:){7}[0-9a-zA-Z]{1,4})$";
+	public static final String IPV6REGEX = "^(([0-9a-fA-F]{1,4}\\:){7}[0-9a-fA-F]{1,4})$";
 }
